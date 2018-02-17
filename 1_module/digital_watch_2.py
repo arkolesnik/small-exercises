@@ -1,0 +1,9 @@
+n = int(input())
+s = n % 86400
+hours = s // 3600
+m = s % 3600
+minutes = m // 60
+seconds = m % 60
+m_str = str(minutes // 10) + str(minutes % 10)
+s_str = str(seconds // 10) + str(seconds % 10)
+print(hours, m_str, s_str, sep=":")
